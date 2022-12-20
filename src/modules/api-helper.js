@@ -11,10 +11,10 @@ export const createGame = async () => {
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }
+    },
   );
   const data = await respond.json();
-  return data.result ? true : false;
+  return !!data.result;
 };
 
 export const addNewScore = async (user, score) => {
@@ -23,21 +23,21 @@ export const addNewScore = async (user, score) => {
     {
       method: 'POST',
       body: JSON.stringify({
-        user: user,
-        score: score,
+        user,
+        score,
       }),
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
       },
-    }
+    },
   );
   const data = await respond.json();
-  return data.result ? true : false;
+  return !!data.result;
 };
 
 export const getLeaderboard = async () => {
   const respond = await fetch(
-    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${GAME_ID}/scores`
+    `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${GAME_ID}/scores`,
   );
   const data = await respond.json();
   return data.result;

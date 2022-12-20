@@ -4,56 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Git Leaderboard</title>
+    <title>Commit Conquest</title>
   <script defer src="main.js"></script></head>
   <body>
     <header id="main-header">
-      <h1><a href="#" id="logo"> Git Leaderboard</a></h1>
+      <h1><a href="#" id="logo">Commit Conquest</a></h1>
     </header>
     <main>
       <article id="leaderboard">
         <header>
-          <h2>Recent Scores</h2>
+          <h2>Leaderboard</h2>
           <button type="button" id="refresh-btn">Refresh</button>
         </header>
         <ul id="score-container">
-          <li class="score-item">
-            <p class="user">Hein</p>
-            <p class="score">178</p>
-          </li>
-          <li class="score-item">
-            <p class="user">Thant</p>
-            <p class="score">218</p>
-          </li>
-          <li class="score-item">
-            <p class="user">John</p>
-            <p class="score">254</p>
-          </li>
-          <li class="score-item">
-            <p class="user">Tom</p>
-            <p class="score">245</p>
-          </li>
-          <li class="score-item">
-            <p class="user">Alex</p>
-            <p class="score">168</p>
-          </li>
-          <li class="score-item">
-            <p class="user">Peter</p>
-            <p class="score">534</p>
-          </li>
+          <!-- this section will load data from API  -->
         </ul>
       </article>
       <article id="form-container">
         <h2>Add your score</h2>
         <form action="#" id="score-form">
-          <input type="text" placeholder="Your github username" required />
-          <input type="number" placeholder="Your total commits" required />
+          <input
+            id="user-in"
+            type="text"
+            placeholder="Your github username"
+            required
+          />
+          <input
+            id="score-in"
+            type="number"
+            placeholder="Your total commits"
+            required
+          />
           <button type="submit" id="submit-btn">Submit</button>
+          <p id="noti"></p>
         </form>
       </article>
     </main>
     <footer>
-      <p>Copyright &copy; 2022 gitleaderboard@icmm.com</p>
+      <p>Copyright &copy; 2022 commitconquest@icmm.com</p>
     </footer>
   </body>
 </html>

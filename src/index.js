@@ -1,5 +1,5 @@
 import './index.css';
-import { refreshTable } from './modules/table-manager.js';
+import refreshTable from './modules/table-manager.js';
 import { addNewScore } from './modules/api-helper.js';
 
 const refresh = document.querySelector('#refresh-btn');

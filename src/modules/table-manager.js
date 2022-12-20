@@ -14,7 +14,7 @@ const makeRowItem = (data) => {
   return li;
 };
 
-export const refreshTable = async () => {
+const refreshTable = async () => {
   const scoreContainer = document.querySelector('#score-container');
   const leaderboard = await getLeaderboard();
 
@@ -24,3 +24,5 @@ export const refreshTable = async () => {
     scoreContainer.appendChild(row);
   });
 };
+
+export default refreshTable;
