@@ -17,38 +17,26 @@
           <button type="button" id="refresh-btn">Refresh</button>
         </header>
         <ul id="score-container">
-          <li class="score-item">
-            <p class="user">Hein</p>
-            <p class="score">178</p>
-          </li>
-          <li class="score-item">
-            <p class="user">Thant</p>
-            <p class="score">218</p>
-          </li>
-          <li class="score-item">
-            <p class="user">John</p>
-            <p class="score">254</p>
-          </li>
-          <li class="score-item">
-            <p class="user">Tom</p>
-            <p class="score">245</p>
-          </li>
-          <li class="score-item">
-            <p class="user">Alex</p>
-            <p class="score">168</p>
-          </li>
-          <li class="score-item">
-            <p class="user">Peter</p>
-            <p class="score">534</p>
-          </li>
+          <!-- this section will load data from API  -->
         </ul>
       </article>
       <article id="form-container">
         <h2>Add your score</h2>
         <form action="#" id="score-form">
-          <input type="text" placeholder="Your github username" required />
-          <input type="number" placeholder="Your total commits" required />
+          <input
+            id="user-in"
+            type="text"
+            placeholder="Your github username"
+            required
+          />
+          <input
+            id="score-in"
+            type="number"
+            placeholder="Your total commits"
+            required
+          />
           <button type="submit" id="submit-btn">Submit</button>
+          <p id="noti"></p>
         </form>
       </article>
     </main>
