@@ -1,5 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: blueviolet;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #fff;
+  background-color: lightgreen;
+}
+
+main {
+  display: flex;
+  padding: 1rem;
+  min-height: 80vh;
+}
+
+article {
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+button {
+  padding: 0.25rem 1rem;
+  font-size: 1.1rem;
+  background-color: darkorange;
+  color: white;
+}
+
+button:hover {
+  background-color: gold;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+#main-header {
+  background-color: white;
+}
+
+#logo {
+  color: darkslateblue;
+}
+
+#leaderboard {
+  flex: 1;
+}
+
+#leaderboard header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#score-container {
+  list-style: none;
+  border: solid 3px;
+  border-color: darkgoldenrod;
+}
+
+.score-item {
+  padding: 0.25rem 2rem;
+  background-color: floralwhite;
+  display: flex;
+  justify-content: space-between;
+}
+
+.score-item:nth-child(even) {
+  background-color: gainsboro;
+}
+
+#form-container {
+  flex: 1;
+}
+
+#form-container h2 {
+  text-align: center;
+}
+
+#score-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+#submit-btn {
+  align-self: flex-end;
 }
