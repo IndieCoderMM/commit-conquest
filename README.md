@@ -51,7 +51,7 @@ After you're finished please remove all the comments and instructions!
   - [👨‍🚀 IndieCoderMM ](#-indiecodermm-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
-  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🤩 Show your support ](#-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
   - [📝 License ](#-license-)
 
@@ -74,9 +74,9 @@ In **Commit Conquest**, players are challenged to use their _Git Commits_ as poi
 
 ### Key Features <a name="key-features"></a>
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Leaderboard**: Track and view progresses in real-time
+- **Commit-based Points**: Earn points by making commits
+- **Gamification**: Provide fun and engaging way to improve programming skills
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,11 +186,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Use leaderboard API to track data**
+- [ ] **Create a stunning UI**
+- [ ] **Add user interaction**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,11 +204,9 @@ Feel free to check the [issues page](../../issues/).
 
 <!-- SUPPORT -->
 
-## ⭐️ Show your support <a name="support"></a>
+## 🤩 Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project, you can support me by giving a ⭐.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -218,9 +214,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I would like to thank all code reviewers for making this project better.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
