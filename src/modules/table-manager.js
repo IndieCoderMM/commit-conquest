@@ -20,7 +20,7 @@ const cleanData = (leaderboard) => {
   const copyData = leaderboard.slice();
   copyData.forEach((item) => {
     const duplicates = leaderboard.filter(
-      (a) => a.user.toLowerCase() === item.user.toLowerCase()
+      (a) => a.user.toLowerCase() === item.user.toLowerCase(),
     );
     duplicates.sort((a, b) => b.score - a.score);
     duplicates.forEach((data, index) => {
