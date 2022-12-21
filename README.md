@@ -186,9 +186,10 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Use leaderboard API to track data**
-- [ ] **Create a stunning UI**
-- [ ] **Add user interaction**
+- [x] **Use leaderboard API to track data**
+- [x] **Create a stunning UI**
+- [x] **Add user interaction**
+- [ ] **User registeration**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
