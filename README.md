@@ -1,27 +1,5 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
 <div align="center">
 
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
@@ -46,13 +24,12 @@ After you're finished please remove all the comments and instructions!
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
-    - [Run tests](#run-tests)
-    - [Deployment](#deployment)
   - [👨‍🚀 IndieCoderMM ](#-indiecodermm-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [🤩 Show your support ](#-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [💎 Resources ](#-resources-)
   - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
@@ -61,20 +38,24 @@ After you're finished please remove all the comments and instructions!
 
 In **Commit Conquest**, players are challenged to use their _Git Commits_ as points to climb the leaderboard. The game is designed to encourage players to actively contribute to projects, as well as to improve their skills in version control and collaboration. Players can update their progress and compete with other players in real-time.
 
+![screenshot](leaderboard_screenshot.png)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-- ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-- ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-- ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)
+
+- [Leaderboard API](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3): To collect and update the scores
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **Leaderboard**: Track and view progresses in real-time
+- **Leaderboard**: Track and view progress in real-time
 - **Commit-based Points**: Earn points by making commits
 - **Gamification**: Provide fun and engaging way to improve programming skills
 
@@ -92,83 +73,36 @@ In **Commit Conquest**, players are challenged to use their _Git Commits_ as poi
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+In order to run this project you need [Node.js](https://nodejs.org/en/) installed on your computer.
 
 ### Setup
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone git@github.com:IndieCoderMM/commit-conquest.git
 ```
---->
 
 ### Install
 
-Install this project with:
-
-<!--
-Example command:
+Install the dependencies with:
 
 ```sh
-  cd my-project
-  gem install
+  npm install
 ```
---->
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
-  rails server
+  npm start
 ```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,9 +110,12 @@ Example:
 
 ## 👨‍🚀 IndieCoderMM <a name="authors"></a>
 
-- [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/IndieCoderMM)
-- [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/hthant_oo)
-- [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/linkedinhandle)
+I am always looking for ways to improve my project. If you have any suggestions or ideas, I would love to hear from you.
+
+[![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/IndieCoderMM)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/hthant_oo)
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/hthantoo)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](hthant00chk@gmail.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,9 +123,13 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Use leaderboard API to track data**
-- [ ] **Create a stunning UI**
-- [ ] **Add user interaction**
+- [x] **Use leaderboard API to track data**
+- [x] **Create a stunning UI**
+- [x] **Add user interaction**
+- [ ] **User registeration**
+- [ ] **Social features**
+- [ ] **Customizable avatar**
+- [ ] **Automatic commit tracking**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -196,9 +137,7 @@ Example:
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+I welcome any and all contribution that can help me improve my project. If you have any ideas or feedback that you'd like to share, please don't hesitate to reach out.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,6 +156,15 @@ If you like this project, you can support me by giving a ⭐.
 I would like to thank all code reviewers for making this project better.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💎 Resources <a name="resources"></a>
+
+- Google fonts
+  - [MedievalSharp](https://fonts.google.com/specimen/MedievalSharp)
+  - [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P)
+- Assets
+  - [GUI Essential](https://crusenho.itch.io/complete-gui-essential-pack)
+  - [Pixel Art GUI](https://mounirtohami.itch.io/pixel-art-gui-elements)
 
 <!-- LICENSE -->
 

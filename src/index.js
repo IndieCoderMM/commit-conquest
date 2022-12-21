@@ -5,26 +5,32 @@ import { addNewScore } from './modules/api-helper.js';
 const refresh = document.querySelector('#refresh-btn');
 const form = document.querySelector('#score-form');
 const noti = document.querySelector('#noti');
+const userInput = form.querySelector('#user-in');
+const scoreInput = form.querySelector('#score-in');
+
+const popUpNoti = (message) => {
+  noti.innerText = message;
+  noti.classList.toggle('hide');
+  setTimeout(() => {
+    noti.classList.toggle('hide');
+  }, 3000);
+};
 
 refreshTable();
 refresh.addEventListener('click', refreshTable);
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
-  const user = form.querySelector('#user-in').value;
-  const score = form.querySelector('#score-in').value;
+  const user = userInput.value.trim();
+  const score = scoreInput.value;
+  if (!user.length) {
+    userInput.value = '';
+    popUpNoti('Please enter your username!');
+    return;
+  }
   const success = await addNewScore(user, score);
   if (success) {
-    noti.textContent = 'New score added successfully!';
     form.reset();
     refreshTable();
-    setTimeout(() => {
-      noti.textContent = '';
-    }, 3000);
-  } else {
-    noti.textContent = 'Error adding new score!';
-    refreshTable();
-    setTimeout(() => {
-      noti.textContent = '';
-    }, 3000);
+    popUpNoti('New score added successfully!');
   }
 });

@@ -4,14 +4,20 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #219ebc;
+  --secondary: #023047;
+  --highlight: #ffb703;
+  --orange: #d62828;
+}
+
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: lightgreen;
+  font-family: 'Press Start 2P', cursive;
+  background-color: var(--primary);
 }
 
 main {
   display: flex;
-  padding: 1rem;
   min-height: 80vh;
 }
 
@@ -24,19 +30,9 @@ a {
 }
 
 h2 {
+  color: var(--highlight);
   margin-bottom: 1rem;
-  font-size: 1.3rem;
-}
-
-button {
-  padding: 0.25rem 1rem;
-  font-size: 1.1rem;
-  background-color: darkorange;
-  color: white;
-}
-
-button:hover {
-  background-color: gold;
+  font-size: 1.4rem;
 }
 
 input {
@@ -44,48 +40,109 @@ input {
   font-size: 1.1rem;
 }
 
+input::placeholder {
+  font-family: 'MedievalSharp', cursive;
+}
+
 footer {
   text-align: center;
-  padding-top: 2rem;
+  font-size: 0.9rem;
+  padding: 1rem;
+}
+
+.hide {
+  display: none;
 }
 
 #main-header {
-  background-color: white;
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #logo {
-  color: darkslateblue;
+  color: white;
+  font-family: 'MedievalSharp', cursive;
+}
+
+.greeting {
+  color: black;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.25rem;
+  padding: 1rem 3rem;
+  display: block;
+  width: 90%;
+  margin: 1rem auto 0;
+  background-image: url('../img/paper.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.highlight-text {
+  color: blueviolet;
+  text-transform: uppercase;
 }
 
 #leaderboard {
-  flex: 1;
+  flex: 2;
 }
 
 #leaderboard header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#refresh-btn {
+  width: 64px;
+  height: 64px;
+  background: url('../img/refresh_btn.png') no-repeat bottom left 100% / 100%;
+  image-rendering: pixelated;
+  border: none;
+}
+
+#refresh-btn:active {
+  background-image: url('../img/refresh_click.png');
 }
 
 #score-container {
+  background-image: url('../img/paper_board.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top left;
+  image-rendering: pixelated;
+  padding: 2rem;
+  height: 300px;
+}
+
+#score-list {
   list-style: none;
-  border: solid 3px;
-  border-color: darkgoldenrod;
+  height: 100%;
+  overflow-y: scroll;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'MedievalSharp', cursive;
 }
 
 .score-item {
-  padding: 0.25rem 2rem;
-  background-color: floralwhite;
+  padding: 0.25rem 0.5rem;
   display: flex;
   justify-content: space-between;
 }
 
 .score-item:nth-child(even) {
-  background-color: gainsboro;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #form-container {
   flex: 1;
+  padding: 3rem 1rem;
 }
 
 #form-container h2 {
@@ -99,9 +156,58 @@ footer {
   max-width: fit-content;
   margin: auto;
   padding: 1rem;
-  gap: 1rem;
+  gap: 0.5rem;
+  position: relative;
+}
+
+#noti {
+  background-color: bisque;
+  text-align: center;
+  color: black;
+  border: solid 2px brown;
+  border-radius: 4px;
+  position: absolute;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
 }
 
 #submit-btn {
   align-self: flex-end;
+  width: 150px;
+  height: 80px;
+  padding: 0.25rem 1rem;
+  font-size: 1.1rem;
+  font-family: 'Press Start 2P', cursive;
+  background: url('../img/btn.png') no-repeat bottom left 100%/100%;
+  image-rendering: pixelated;
+  border: none;
+  color: white;
+}
+
+#submit-btn:active {
+  padding-top: 0.75rem;
+  background-image: url('../img/btn_click.png');
+}
+
+.input-group {
+  background-image: url('../img/wood_board.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+  padding: 4rem;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
 }

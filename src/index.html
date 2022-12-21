@@ -4,44 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <title>Commit Conquest</title>
   </head>
   <body>
     <header id="main-header">
-      <h1><a href="#" id="logo">Commit Conquest</a></h1>
+      <h1><a href="#" id="logo">⚔ Commit Conquest</a></h1>
+      <p>Total Players: <span id="p-count">0</span></p>
     </header>
+    <p class="greeting">
+      Welcome to <strong>Codevalia</strong>, brave programmer!<br />
+      In this land, your <strong>Git Commits</strong> are your greatest weapons.
+      Climb the <em>Leaderboard</em> and become the
+      <span class="highlight-text"><strong>Git Master</strong></span> yourself.
+    </p>
     <main>
       <article id="leaderboard">
         <header>
           <h2>Leaderboard</h2>
-          <button type="button" id="refresh-btn">Refresh</button>
+          <button type="button" id="refresh-btn"></button>
         </header>
-        <ul id="score-container">
-          <!-- this section will load data from API  -->
-        </ul>
+        <section id="score-container">
+          <ul id="score-list">
+            <!-- this section will load data from API  -->
+          </ul>
+        </section>
       </article>
       <article id="form-container">
         <h2>Add your score</h2>
         <form action="#" id="score-form">
-          <input
-            id="user-in"
-            type="text"
-            placeholder="Your github username"
-            required
-          />
-          <input
-            id="score-in"
-            type="number"
-            placeholder="Your total commits"
-            required
-          />
+          <section class="input-group">
+            <input
+              id="user-in"
+              type="text"
+              placeholder="Your github username"
+              required
+            />
+            <input
+              id="score-in"
+              type="number"
+              min="1"
+              max="9999"
+              placeholder="Your total commits"
+              required
+            />
+          </section>
           <button type="submit" id="submit-btn">Submit</button>
-          <p id="noti"></p>
+          <p id="noti" class="hide">New Score added successfully!</p>
         </form>
       </article>
     </main>
     <footer>
-      <p>Copyright &copy; 2022 commitconquest@icmm.com</p>
+      <p>Copyright &copy; 2022 IndieCoderMM</p>
     </footer>
   </body>
 </html>
