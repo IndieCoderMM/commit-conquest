@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Press+Start+2P&display=swap"
       rel="stylesheet"
     />
     <title>Commit Conquest</title>
@@ -18,9 +18,9 @@
     </header>
     <p class="greeting">
       Welcome to <strong>Codevalia</strong>, brave programmer!<br />
-      In this land, your <em>Git Commits</em> are your greatest weapon. Climb
-      the <em>Leaderboard</em> and become the
-      <span class="highlight-text">Git Master</span> yourself.
+      In this land, your <strong>Git Commits</strong> are your greatest weapons.
+      Climb the <em>Leaderboard</em> and become the
+      <span class="highlight-text"><strong>Git Master</strong></span> yourself.
     </p>
     <main>
       <article id="leaderboard">
@@ -47,12 +47,14 @@
             <input
               id="score-in"
               type="number"
+              min="1"
+              max="9999"
               placeholder="Your total commits"
               required
             />
           </section>
           <button type="submit" id="submit-btn">Submit</button>
-          <p id="noti"></p>
+          <p id="noti" class="hide">New Score added successfully!</p>
         </form>
       </article>
     </main>
