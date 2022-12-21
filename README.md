@@ -65,7 +65,7 @@ In **Commit Conquest**, players are challenged to use their _Git Commits_ as poi
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+Join the challenge and see if you have what it takes to become the _ultimate Git Master_ in [Commit Conquest](https://indiecodermm.github.io/commit-conquest/dist/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
