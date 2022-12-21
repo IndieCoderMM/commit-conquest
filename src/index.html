@@ -20,13 +20,13 @@
       Welcome to <strong>Codevalia</strong>, brave programmer!<br />
       In this land, your <em>Git Commits</em> are your greatest weapon. Climb
       the <em>Leaderboard</em> and become the
-      <span class="highlight-text">GitMaster</span> yourself.
+      <span class="highlight-text">Git Master</span> yourself.
     </p>
     <main>
       <article id="leaderboard">
         <header>
           <h2>Leaderboard</h2>
-          <button type="button" id="refresh-btn">Refresh</button>
+          <button type="button" id="refresh-btn"></button>
         </header>
         <section id="score-container">
           <ul id="score-list">
@@ -37,18 +37,20 @@
       <article id="form-container">
         <h2>Add your score</h2>
         <form action="#" id="score-form">
-          <input
-            id="user-in"
-            type="text"
-            placeholder="Your github username"
-            required
-          />
-          <input
-            id="score-in"
-            type="number"
-            placeholder="Your total commits"
-            required
-          />
+          <section class="input-group">
+            <input
+              id="user-in"
+              type="text"
+              placeholder="Your github username"
+              required
+            />
+            <input
+              id="score-in"
+              type="number"
+              placeholder="Your total commits"
+              required
+            />
+          </section>
           <button type="submit" id="submit-btn">Submit</button>
           <p id="noti"></p>
         </form>
