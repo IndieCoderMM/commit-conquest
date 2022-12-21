@@ -4,9 +4,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary: #219ebc;
+  --secondary: #023047;
+  --highlight: #ffb703;
+  --orange: #d62828;
+}
+
 body {
   font-family: 'Press Start 2P', cursive;
-  background-color: lightseagreen;
+  background-color: var(--primary);
 }
 
 main {
@@ -23,9 +30,9 @@ a {
 }
 
 h2 {
-  color: gold;
+  color: var(--highlight);
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 
 input {
@@ -39,6 +46,7 @@ input::placeholder {
 
 footer {
   text-align: center;
+  font-size: 0.9rem;
   padding: 1rem;
 }
 
@@ -47,14 +55,17 @@ footer {
 }
 
 #main-header {
-  background-color: white;
+  background-color: var(--secondary);
+  color: #fff;
+  padding: 0.5rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 #logo {
-  color: darkslateblue;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-family: 'MedievalSharp', cursive;
 }
 
 .greeting {
@@ -78,7 +89,7 @@ footer {
 }
 
 #leaderboard {
-  flex: 1;
+  flex: 2;
 }
 
 #leaderboard header {
@@ -120,14 +131,13 @@ footer {
 }
 
 .score-item {
-  padding: 0.25rem 2rem;
-  /* background-color: rgba(255, 250, 240, 0.6); */
+  padding: 0.25rem 0.5rem;
   display: flex;
   justify-content: space-between;
 }
 
 .score-item:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.718);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #form-container {
@@ -194,4 +204,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
 }

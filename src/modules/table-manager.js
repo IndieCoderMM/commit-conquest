@@ -1,11 +1,12 @@
 import { getLeaderboard } from './api-helper.js';
 
-const makeRowItem = (data) => {
+const makeRowItem = (data, index) => {
   const li = document.createElement('li');
   const username = document.createElement('p');
   const score = document.createElement('p');
   username.classList.add('username');
-  username.innerText = data.user;
+  username.innerText = index < 9 ? `0${index + 1}. ` : `${index + 1}. `;
+  username.innerText += index === 0 ? `${data.user}  👑` : data.user;
   score.classList.add('score');
   score.innerText = data.score;
   li.classList.add('score-item');
@@ -33,11 +34,13 @@ const cleanData = (leaderboard) => {
 
 const refreshTable = async () => {
   const scoreList = document.querySelector('#score-list');
+  const totalPlayers = document.querySelector('#p-count');
   const leaderboard = await getLeaderboard();
   cleanData(leaderboard);
+  totalPlayers.textContent = leaderboard.length;
   scoreList.textContent = '';
-  leaderboard.forEach((data) => {
-    const row = makeRowItem(data);
+  leaderboard.forEach((data, index) => {
+    const row = makeRowItem(data, index);
     scoreList.appendChild(row);
   });
 };
