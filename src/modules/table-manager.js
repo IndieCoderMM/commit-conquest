@@ -32,13 +32,13 @@ const cleanData = (leaderboard) => {
 };
 
 const refreshTable = async () => {
-  const scoreContainer = document.querySelector('#score-container');
+  const scoreList = document.querySelector('#score-list');
   const leaderboard = await getLeaderboard();
   cleanData(leaderboard);
-  scoreContainer.textContent = '';
+  scoreList.textContent = '';
   leaderboard.forEach((data) => {
     const row = makeRowItem(data);
-    scoreContainer.appendChild(row);
+    scoreList.appendChild(row);
   });
 };
 

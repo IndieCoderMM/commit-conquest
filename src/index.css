@@ -5,13 +5,12 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Press Start 2P', cursive;
   background-color: lightgreen;
 }
 
 main {
   display: flex;
-  padding: 1rem;
   min-height: 80vh;
 }
 
@@ -31,6 +30,7 @@ h2 {
 button {
   padding: 0.25rem 1rem;
   font-size: 1.1rem;
+  font-family: 'Press Start 2P', cursive;
   background-color: darkorange;
   color: white;
 }
@@ -46,7 +46,7 @@ input {
 
 footer {
   text-align: center;
-  padding-top: 2rem;
+  padding: 1rem;
 }
 
 #main-header {
@@ -55,6 +55,7 @@ footer {
 
 #logo {
   color: darkslateblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #leaderboard {
@@ -68,20 +69,31 @@ footer {
 }
 
 #score-container {
+  background-image: url('../img/paper_board.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top left;
+  image-rendering: pixelated;
+  padding: 2rem;
+  height: 300px;
+}
+
+#score-list {
   list-style: none;
-  border: solid 3px;
-  border-color: darkgoldenrod;
+  height: 100%;
+  overflow-y: scroll;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .score-item {
   padding: 0.25rem 2rem;
-  background-color: floralwhite;
+  /* background-color: rgba(255, 250, 240, 0.6); */
   display: flex;
   justify-content: space-between;
 }
 
 .score-item:nth-child(even) {
-  background-color: gainsboro;
+  background-color: rgba(220, 220, 220, 0.65);
 }
 
 #form-container {
@@ -104,4 +116,23 @@ footer {
 
 #submit-btn {
   align-self: flex-end;
+}
+
+.greeting {
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.25rem;
+  padding: 1rem 3rem;
+  display: block;
+  width: 70%;
+  margin: 1rem auto 0;
+  background-image: url('../img/msg_plate.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  image-rendering: pixelated;
+}
+
+.highlight-text {
+  color: gold;
 }

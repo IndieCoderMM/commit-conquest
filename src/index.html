@@ -4,21 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
     <title>Commit Conquest</title>
   </head>
   <body>
     <header id="main-header">
       <h1><a href="#" id="logo">Commit Conquest</a></h1>
     </header>
+    <p class="greeting">
+      Welcome to <strong>Codevalia</strong>, brave programmer!<br />
+      In this land, your <em>Git Commits</em> are your greatest weapon. Climb
+      the <em>Leaderboard</em> and become the
+      <span class="highlight-text">GitMaster</span> yourself.
+    </p>
     <main>
       <article id="leaderboard">
         <header>
           <h2>Leaderboard</h2>
           <button type="button" id="refresh-btn">Refresh</button>
         </header>
-        <ul id="score-container">
-          <!-- this section will load data from API  -->
-        </ul>
+        <section id="score-container">
+          <ul id="score-list">
+            <!-- this section will load data from API  -->
+          </ul>
+        </section>
       </article>
       <article id="form-container">
         <h2>Add your score</h2>
