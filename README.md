@@ -1,7 +1,6 @@
 <a name="readme-top"></a>
 
 [![CodeFactor](https://www.codefactor.io/repository/github/indiecodermm/commit-conquest/badge)](https://www.codefactor.io/repository/github/indiecodermm/commit-conquest)
-
 [![Maintainability](https://api.codeclimate.com/v1/badges/0a6c8129bbba120aa360/maintainability)](https://codeclimate.com/github/IndieCoderMM/commit-conquest/maintainability)
 
 <div align="center">
