@@ -15,7 +15,7 @@
   <body>
     <header id="main-header">
       <h1><a href="#" id="logo">⚔ Commit Conquest</a></h1>
-      <p>Total Players: <span id="p-count">0</span></p>
+      <p>Players: <span id="p-count">0</span></p>
     </header>
     <p class="greeting">
       Welcome to <strong>Codevalia</strong>, brave programmer!<br />
@@ -27,7 +27,7 @@
       <article id="leaderboard">
         <header>
           <h2>Leaderboard</h2>
-          <button type="button" id="refresh-btn"></button>
+          <button type="button" id="refresh-btn" title="refresh"></button>
         </header>
         <section id="score-container">
           <ul id="score-list">
@@ -38,7 +38,7 @@
       <article id="form-container">
         <h2>Add your score</h2>
         <form action="#" id="score-form">
-          <section class="input-group">
+          <div class="input-group">
             <input
               id="user-in"
               type="text"
@@ -53,7 +53,7 @@
               placeholder="Your total commits"
               required
             />
-          </section>
+          </div>
           <button type="submit" id="submit-btn">Submit</button>
           <p id="noti" class="hide">New Score added successfully!</p>
         </form>
